@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import java.text.DecimalFormat;
 
@@ -191,6 +192,8 @@ public class MainActivity extends AppCompatActivity {
             num1= Double.parseDouble(caja_Principal.getText().toString());
             num2= (double) 1/num1;
             caja_Principal.setText(decimalFormat.format(num2));
+        }else{
+            Toast.makeText(this,"No se puede dividir entre 0",Toast.LENGTH_LONG);
         }
     }
     public void masMenos(View v){
@@ -218,6 +221,8 @@ public class MainActivity extends AppCompatActivity {
             if(!caja_Principal.getText().toString().equals("0")) {
                 num2 = num1 / Double.parseDouble(caja_Principal.getText().toString());
                 caja_Principal.setText(decimalFormat.format(num2));
+            }else{
+                Toast.makeText(this,"No se puede dividir entre 0",Toast.LENGTH_LONG);
             }
         }else if (operador=="+") {
             num2=num1+Double.parseDouble(caja_Principal.getText().toString());
