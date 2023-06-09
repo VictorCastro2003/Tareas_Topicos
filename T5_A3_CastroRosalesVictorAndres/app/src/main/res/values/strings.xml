@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">T5_A4_PinedoBerumenClaraRuby</string>
+
+
+    <string name="lbl_titulo">Conversor Sistemas</string>
+
+    <string name="rb_decimal">Decimal</string>
+    <string name="rb_binario">Binario</string>
+    <string name="rb_octal">Octal</string>
+    <string name="rb_hexadecimal">Hexadecimal</string>
+
+    <string name="txt_ingresa">Ingresa numero</string>
+    <string name="caja_ingresar">0</string>
+
+    <string name="cb_binario">Binario</string>
+    <string name="cb_octal">Octal</string>
+    <string name="cb_hexadecimal">Hexadecimal</string>
+
+    <string name="caja_binario"></string>
+    <string name="caja_octal"></string>
+    <string name="caja_hexadecimal"></string>
+
+</resources>
