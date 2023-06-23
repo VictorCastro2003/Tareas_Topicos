@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#AEACAC"
+    android:backgroundTint="#C8C2C2"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtTitulo"
+        android:layout_width="192dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="108dp"
+        android:foregroundTint="#69C8D5"
+        android:text="@string/lbl_titulo"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="351dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="28dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitulo">
+
+        <RadioButton
+            android:id="@+id/rbDecimal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="btDecimal"
+            android:text="@string/rb_decimal" />
+
+        <RadioButton
+            android:id="@+id/rbBinario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="btBinario"
+            android:text="@string/rb_binario" />
+
+        <RadioButton
+            android:id="@+id/rbOctal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="btOcta"
+            android:text="@string/rb_octal" />
+
+        <RadioButton
+            android:id="@+id/rbHexa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="btHexa"
+            android:text="@string/rb_hexadecimal" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/txtIngresa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="48dp"
+        android:text="@string/txt_ingresa"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <EditText
+        android:id="@+id/cajaIngresar"
+        android:layout_width="295dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="24dp"
+        android:autofillHints="user"
+        android:ems="10"
+        android:text="@string/caja_ingresar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtIngresa" />
+
+    <CheckBox
+        android:id="@+id/cbBinario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="62dp"
+        android:layout_marginTop="23dp"
+        android:onClick="checkSelect"
+        android:text="@string/cb_binario"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cajaIngresar" />
+
+    <CheckBox
+        android:id="@+id/cbHexa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="62dp"
+        android:layout_marginTop="20dp"
+        android:onClick="checkSelect"
+        android:text="@string/cb_hexadecimal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cbBinario" />
+
+    <CheckBox
+        android:id="@+id/cbOctal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="63dp"
+        android:layout_marginTop="25dp"
+        android:onClick="checkSelect"
+        android:text="@string/cb_octal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cbHexa" />
+
+    <EditText
+        android:id="@+id/cajaBinario"
+        android:layout_width="179dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="56dp"
+        android:autofillHints="user"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/caja_binario"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cajaIngresar" />
+
+    <EditText
+        android:id="@+id/cajaHexa"
+        android:layout_width="143dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="56dp"
+        android:autofillHints="user"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/caja_hexadecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cajaBinario" />
+
+    <EditText
+        android:id="@+id/cajaOctal"
+        android:layout_width="184dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="56dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/caja_octal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cajaHexa" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
